@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url(./fonts/gilroy-extrabold.otf);
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url(./fonts/gilroy-light.otf);
+}
+header {
+  background-color: #F7F7F8;
+}
+header .nav-link:hover {
+  color: red;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+header .navbar-brand:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+.nav-text {
+  font-family: "Gilroy-ExtraBold";
+  color: black;
+  font-size: x-large;
+  z-index: 999;
+}
+.title-text {
+  font-family: "Gilroy-ExtraBold";
+  color: black;
+  display: inline-flex;
+  z-index: 999;
+}

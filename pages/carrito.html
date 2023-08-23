@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!--NavBar-->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid  justify-content-center">
+          <a class="navbar-brand ms-3" href="../index.html">
+            <img src="../img/logo.png" alt="Logo" style="height: 88px;" class="justify-content-center">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-4" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link nav-text" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item nav-text">
+                <a class="nav-link" aria-current="page" href="carrito.html">
+                  <img src="../img/carrito.png" alt="" style="height: 32px;">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Main-->
+    <main style="margin-top: 150px;">
+      <div class="container mt-5">
+        <section>
+          
+            <div class="row d-flex">
+              <div class="col-9">
+                <div class="card px-3 pb-3 bg-light pt-3" id="tablaCarrito">
+
+                </div> 
+              </div>
+              <div class="col-3">
+                <div class="card px-3 py-2 bg-light">
+                  <h4 class="text-center">Resumen de Compra</h4>
+                  <hr class="dropdown-divider">
+                  <div id="resumenCarrito">
+
+                  </div>
+                  <button id="botonComprarCarrito" class="btn btn-primary d-block mt-2 mb-3">Comprar</button>
+                </div> 
+              </div>
+              <!--Productos en el carrito-->
+            </div>
+        </section>
+      </div>
+    </main>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../scripts/productos.js"></script>
+    <script src="../scripts/carrito.js"></script>
+  </body>
+</html>
